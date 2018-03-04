@@ -1,4 +1,4 @@
-#jQuery to Vanilla
+# jQuery to Vanilla
 
 ```sh
 npm run dev
