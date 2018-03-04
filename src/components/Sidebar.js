@@ -8,8 +8,12 @@ class Sidebar extends Component {
   render() {
     return (
       <div className="Sidebar">
-        <SearchBox />
-        <MethodsList />
+        <div className="Sidebar-top">
+          <SearchBox />
+        </div>
+        <div className="Sidebar-bottom">
+          <MethodsList />
+        </div>
       </div>
     );
   }

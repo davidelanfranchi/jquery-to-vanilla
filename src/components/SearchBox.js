@@ -5,7 +5,13 @@ class SearchBox extends Component {
   render() {
     return (
       <div className="SearchBox">
-        <h2>SearchBox</h2>
+        <form role="search">
+          <input
+            type="search"
+            placeholder="Type a jQuery method"
+            aria-label="Search through jQuery methods"
+          />
+        </form>
       </div>
     );
   }
