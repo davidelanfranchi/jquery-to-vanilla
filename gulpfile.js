@@ -9,11 +9,17 @@ marked.setOptions({
   }
 });
 
+const configObject = {
+  renderer: marked,
+  name: "src/data/data.json",
+  flattenIndex: true
+};
+
 gulp.task("markdown", () => {
   gulp
     .src("./src/data/**/*.md")
     .pipe(gutil.buffer())
-    .pipe(markdownToJSON(marked, "./src/data/data.json"))
+    .pipe(markdownToJSON(configObject))
     .pipe(gulp.dest("."));
 });
 
