@@ -13,7 +13,7 @@ class Main extends Component {
       <div className="Main">
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path="/:category/:method" component={Method} />
+          <Route exact path="/m/:method" component={Method} />
           {/* when none of the above match, <NoMatch> will be rendered */}
           <Route component={NoMatch} />
         </Switch>

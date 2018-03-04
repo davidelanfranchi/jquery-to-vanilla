@@ -1,1 +1,116 @@
-{"categories":{"manipulation":{"id":"manipulation","title":"Manipulation","description":"Adding, removing, copying DOM elements and related manipulations.","body":"","updatedAt":"2018-03-04T13:10:29.000Z","methods":{"append":{"id":"append","title":".append()","description":"Inserts content to the end of element which is specified by a selector.","body":"<h1 id=\"append-content\">Append content</h1>\n<h2 id=\"let-s-see\">Let&#39;s see</h2>\n<pre><code>$(<span class=\"hljs-built_in\">document</span>).ready(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span>(<span class=\"hljs-params\"></span>) </span>{\n  $(<span class=\"hljs-string\">'pre code'</span>).each(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span>(<span class=\"hljs-params\">i, block</span>) </span>{\n    hljs.highlightBlock(block);\n  });\n});\n</code></pre>","updatedAt":"2018-03-04T13:33:01.000Z"}}},"traversing":{"id":"traversing","title":"Traversing","body":"<p>This is the first page</p>\n","updatedAt":"2018-03-04T13:10:42.000Z","methods":{"children":{"id":"children","title":".children()","description":"Get the children of each element in the set of matched elements, optionally filtered by a selector.","body":"","updatedAt":"2018-03-04T12:44:18.000Z"},"closest":{"id":"closest","title":".closest()","description":"Get the first element that matches the selector by testing the element and traversing up in the DOM tree.","body":"","updatedAt":"2018-03-04T12:44:28.000Z"},"find":{"id":"find","title":".find()","description":"Get the descendants of each element in the current set of matched elements.","body":"","updatedAt":"2018-03-04T12:44:33.000Z"}}}},"esempio1":{"section":"Elements","title":"buttons","device":["desktop","mobile"],"styles":["https://lalao.com/styles/structure.min.css","https://lalao.com/styles/app.min.css"],"body":"<p>Follow some application examples of buttons</p>\n<h1 id=\"types\">Types</h1>\n<h2 id=\"base\">Base</h2>\n<p>Base button layout sample:</p>\n<button type=\"button\" class=\"buy-button btn btn-success\">\n  <span class=\"icon\"></span>\n  <span class=\"text\">Button</span> \n</button>\n\n<p>~<del>scss\n.btn-primary {\n@include states(#1A75CE, #086B9C);\n}\n\\</del>~</p>\n<p>~~~html</p>\n<p><button type=\"button\" class=\"buy-button btn btn-success\">\n<span class=\"icon\"></span>\n<span class=\"text\">Button</span>\n</button>\n~~~</p>\n","updatedAt":"2018-03-04T00:38:11.000Z"},"esempio2":{"section":"Elements","title":"icons","tags":["icons","base"],"body":"<h1 id=\"icons\">Icons</h1>\n<p>Our icons list still is empty :(</p>\n<pre><code>$(<span class=\"hljs-built_in\">document</span>).ready(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span>(<span class=\"hljs-params\"></span>) </span>{\n  $(<span class=\"hljs-string\">'pre code'</span>).each(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span>(<span class=\"hljs-params\">i, block</span>) </span>{\n    hljs.highlightBlock(block);\n  });\n});\n</code></pre>","updatedAt":"2018-03-04T00:38:11.000Z"}}
+{
+  "categories": {
+    "id": "categories",
+    "title": "Categories",
+    "liar": [
+      {
+        "id": "traversion",
+        "title": "Traversing",
+        "description": "Methods to traverse DOM elements."
+      },
+      {
+        "id": "manipulation",
+        "title": "Manipulation",
+        "description": "methods to add, edit or delete DOM elements."
+      },
+      {
+        "id": "events",
+        "title": "Events",
+        "description":
+          "Methods used to register behaviors to take effect when the user interacts with the browser, and to further manipulate those registered behaviors."
+      }
+    ],
+    "body": "",
+    "updatedAt": "2018-03-04T21:58:49.000Z"
+  },
+  "content": {
+    "title": "jQuery to Vanilla",
+    "description":
+      "A simple web app to learn how to replace commonly used jQuery methods with plain JavaScript.",
+    "body": "",
+    "updatedAt": "2018-03-04T21:31:56.000Z"
+  },
+  "methods": {
+    "append": {
+      "id": "append",
+      "category": "manipulation",
+      "title": ".append()",
+      "description":
+        "Inserts content to the end of element which is specified by a selector.",
+      "body":
+        "<h1 id=\"append-content\">Append content</h1>\n<h2 id=\"let-s-see\">Let&#39;s see</h2>\n<pre><code>$(<span class=\"hljs-built_in\">document</span>).ready(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span>(<span class=\"hljs-params\"></span>) </span>{\n  $(<span class=\"hljs-string\">'pre code'</span>).each(<span class=\"hljs-function\"><span class=\"hljs-keyword\">function</span>(<span class=\"hljs-params\">i, block</span>) </span>{\n    hljs.highlightBlock(block);\n  });\n});\n</code></pre>",
+      "updatedAt": "2018-03-04T21:47:30.000Z"
+    },
+    "children": {
+      "id": "children",
+      "category": "traversing",
+      "title": ".children()",
+      "description":
+        "Get the children of each element in the set of matched elements, optionally filtered by a selector.",
+      "body": "",
+      "updatedAt": "2018-03-04T21:47:52.000Z"
+    },
+    "closest": {
+      "id": "closest",
+      "category": "traversing",
+      "title": ".closest()",
+      "description":
+        "Get the first element that matches the selector by testing the element and traversing up in the DOM tree.",
+      "body": "",
+      "updatedAt": "2018-03-04T21:47:55.000Z"
+    },
+    "find": {
+      "id": "find",
+      "category": "traversing",
+      "title": ".find()",
+      "description":
+        "Get the descendants of each element in the current set of matched elements.",
+      "body": "",
+      "updatedAt": "2018-03-04T21:48:01.000Z"
+    },
+    "off": {
+      "id": "off",
+      "category": "events",
+      "title": ".off()",
+      "description": "Remove an event handler.",
+      "body": "",
+      "updatedAt": "2018-03-04T21:46:58.000Z"
+    },
+    "on": {
+      "id": "on",
+      "category": "events",
+      "title": ".on()",
+      "description":
+        "Attach an event handler function for one or more events to the selected elements.",
+      "body": "",
+      "updatedAt": "2018-03-04T21:47:05.000Z"
+    },
+    "one": {
+      "id": "one",
+      "category": "events",
+      "title": ".one()",
+      "description":
+        "Attach a handler to an event for the elements. The handler is executed at most once per element per event type.",
+      "body": "",
+      "updatedAt": "2018-03-04T21:47:01.000Z"
+    },
+    "ready": {
+      "id": "ready",
+      "category": "events",
+      "title": ".ready()",
+      "description":
+        "Specify a function to execute when the DOM is fully loaded.",
+      "body": "",
+      "updatedAt": "2018-03-04T21:46:55.000Z"
+    },
+    "resize": {
+      "id": "resize",
+      "category": "events",
+      "title": ".resize()",
+      "description":
+        "Bind an event handler to the “resize” JavaScript event, or trigger that event on an element.",
+      "body": "",
+      "updatedAt": "2018-03-04T21:46:49.000Z"
+    }
+  }
+}
