@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { BrowserRouter } from "react-router-dom";
 
 import "./App.css";
 
@@ -8,10 +9,12 @@ import Sidebar from "./Sidebar";
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <Sidebar />
-        <Main />
-      </div>
+      <BrowserRouter>
+        <div className="App">
+          <Sidebar />
+          <Main />
+        </div>
+      </BrowserRouter>
     );
   }
 }

@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-import "./MethodsList.css";
 
-import { createKeyFromString } from "../utils/Utils";
+import "./MethodsList.css";
 
 import { categories } from "../data/data.json";
 
@@ -13,7 +12,9 @@ class MethodsList extends Component {
       return Object.values(category.methods).map(method => {
         return (
           <MethodsListItem
-            key={createKeyFromString(method.title)}
+            key={method.id}
+            methodId={method.id}
+            categoryId={category.id}
             title={method.title}
           />
         );
