@@ -1,0 +1,24 @@
+{
+  "name": "jquery-to-vanilla",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "highlight.js": "^9.12.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-scripts": "1.1.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "watch-data": "gulp markdown:watch",
+    "dev": "npm run watch-data & npm run start & wait"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-markdown-to-json": "^1.0.3",
+    "marked": "^0.3.17"
+  }
+}
